@@ -8,3 +8,7 @@ inherit_from:
 ```
 
 You can then still overwrite settings to fit your needs. But rather create a pull request in this repo if you want to change anything.
+
+## Updates
+
+To update these settings to a new version of Rubocop you can use this gem: https://github.com/pocke/mry.
