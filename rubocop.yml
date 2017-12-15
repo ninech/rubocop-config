@@ -407,9 +407,6 @@ Style/HashSyntax:
 # Force hashes that have a symbol value to use hash rockets
   UseHashRocketsWithSymbolValues: false
 
-Style/IfUnlessModifier:
-  MaxLineLength: 80
-
 Layout/IndentationConsistency:
   # The difference between `rails` and `normal` is that the `rails` style
   # prescribes that in classes and modules the `protected` and `private`
@@ -691,9 +688,6 @@ Naming/VariableName:
   SupportedStyles:
     - snake_case
     - camelCase
-
-Style/WhileUntilModifier:
-  MaxLineLength: 80
 
 Style/WordArray:
   MinSize: 0
