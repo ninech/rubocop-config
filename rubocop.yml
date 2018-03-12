@@ -634,11 +634,10 @@ Layout/TrailingBlankLines:
     - final_newline
     - final_blank_line
 
-Style/TrailingCommaInLiteral:
-  # If EnforcedStyleForMultiline is comma, the cop requires a comma after the
-  # last item of a list, but only for lists where each item is on its own line.
-  # If EnforcedStyleForMultiline is consistent_comma, the cop requires a comma
-  # after the last item of a list, for all lists.
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 # TrivialAccessors requires exact name matches and doesn't allow
