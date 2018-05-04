@@ -759,6 +759,10 @@ Metrics/PerceivedComplexity:
 
 ##################### Lint ##################################
 
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+    
 # Allow safe assignment in conditions.
 Lint/AssignmentInCondition:
   AllowSafeAssignment: true
