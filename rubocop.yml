@@ -720,7 +720,7 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*_spec.rb'
+    - '**/spec/**/*_spec.rb'
 
 Metrics/BlockNesting:
   Max: 3
@@ -761,7 +761,7 @@ Metrics/PerceivedComplexity:
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - "spec/**/*"
+    - "**/spec/**/*"
     
 # Allow safe assignment in conditions.
 Lint/AssignmentInCondition:
