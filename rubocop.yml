@@ -738,7 +738,7 @@ Metrics/CyclomaticComplexity:
   Max: 6
 
 Metrics/LineLength:
-  Max: 110
+  Max: 100
   # To make it possible to copy or click on URIs in the code, we allow lines
   # contaning a URI to be longer than Max.
   AllowURI: true
@@ -762,7 +762,7 @@ Metrics/PerceivedComplexity:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - "**/spec/**/*"
-    
+
 # Allow safe assignment in conditions.
 Lint/AssignmentInCondition:
   AllowSafeAssignment: true
