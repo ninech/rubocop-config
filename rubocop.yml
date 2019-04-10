@@ -139,7 +139,6 @@ Style/AndOr:
     - always
     - conditionals
 
-
 # Checks if usage of %() or %Q() matches configuration.
 Style/BarePercentLiterals:
   EnforcedStyle: bare_percent
@@ -148,6 +147,7 @@ Style/BarePercentLiterals:
     - bare_percent
 
 Style/BlockDelimiters:
+  Enabled: false
   EnforcedStyle: semantic
   SupportedStyles:
     # The `line_count_based` style enforces braces around single line blocks and
@@ -422,7 +422,7 @@ Style/HashSyntax:
     - ruby19
     - ruby19_no_mixed_keys
     - hash_rockets
-# Force hashes that have a symbol value to use hash rockets
+  # Force hashes that have a symbol value to use hash rockets
   UseHashRocketsWithSymbolValues: false
 
 Layout/IndentationConsistency:
@@ -513,7 +513,7 @@ Style/ParenthesesAroundCondition:
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
-    '%':  ()
+    '%': ()
     '%i': ()
     '%q': ()
     '%Q': ()
@@ -656,7 +656,7 @@ Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: comma
+  Enabled: false
 
 # TrivialAccessors requires exact name matches and doesn't allow
 # predicated methods by default.
@@ -714,9 +714,7 @@ Style/WordArray:
 ##################### Metrics ##################################
 
 Metrics/AbcSize:
-  # The ABC size is a calculated magnitude, so this number can be a Fixnum or
-  # a Float.
-  Max: 15
+  Enabled: false
 
 Metrics/BlockLength:
   Exclude:
@@ -726,11 +724,10 @@ Metrics/BlockNesting:
   Max: 3
 
 Metrics/ClassLength:
-  CountComments: false  # count full line comments?
-  Max: 100
+  Enabled: false
 
 Metrics/ModuleLength:
-  CountComments: false  # count full line comments?
+  CountComments: false # count full line comments?
   Max: 100
 
 # Avoid complex methods.
@@ -738,7 +735,7 @@ Metrics/CyclomaticComplexity:
   Max: 6
 
 Metrics/LineLength:
-  Max: 100
+  Max: 110
   # To make it possible to copy or click on URIs in the code, we allow lines
   # contaning a URI to be longer than Max.
   AllowURI: true
@@ -747,8 +744,7 @@ Metrics/LineLength:
     - https
 
 Metrics/MethodLength:
-  CountComments: false  # count full line comments?
-  Max: 10
+  Enabled: false
 
 Metrics/ParameterLists:
   Max: 5
@@ -761,7 +757,7 @@ Metrics/PerceivedComplexity:
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - "**/spec/**/*"
+    - '**/spec/**/*'
 
 # Allow safe assignment in conditions.
 Lint/AssignmentInCondition:
