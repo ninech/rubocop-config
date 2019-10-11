@@ -35,7 +35,7 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Exclude:
-    - spec/**/*.rb
+    - '**/spec/**/*_spec.rb'
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
