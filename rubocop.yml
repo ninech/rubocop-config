@@ -24,7 +24,11 @@ AllCops:
   # opt-out. Note that when DisabledByDefault is true, cops in user
   # configuration will be enabled even if they don't set the Enabled parameter.
   DisabledByDefault: false
-
+  
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    
 Metrics/BlockLength:
   Exclude:
     - '**/spec/**/*_spec.rb'
