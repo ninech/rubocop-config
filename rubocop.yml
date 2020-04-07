@@ -25,6 +25,8 @@ AllCops:
   # configuration will be enabled even if they don't set the Enabled parameter.
   DisabledByDefault: false
   
+  NewCops: enable
+  
   Exclude:
     - 'node_modules/**/*'
     - 'vendor/**/*'
@@ -33,7 +35,7 @@ Metrics/BlockLength:
   Exclude:
     - '**/spec/**/*_spec.rb'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
 Style/Documentation:
