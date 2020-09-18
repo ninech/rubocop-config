@@ -2,7 +2,7 @@
 require: rubocop-rails
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   # By default, the rails cops are not run. Override in project or home
   # directory .rubocop.yml files, or by giving the -R/--rails option.
   # Cop names are not displayed in offense messages by default. Change behavior
@@ -36,7 +36,7 @@ Metrics/BlockLength:
     - '**/spec/**/*_spec.rb'
 
 Layout/LineLength:
-  Max: 100
+  Max: 120
 
 Style/Documentation:
   Enabled: false
@@ -45,8 +45,7 @@ Style/FormatStringToken:
   EnforcedStyle: template
 
 Style/FrozenStringLiteralComment:
-  Exclude:
-    - '**/spec/**/*_spec.rb'
+  Enabled: false
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
