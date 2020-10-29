@@ -58,3 +58,7 @@ Style/TrailingCommaInHashLiteral:
 
 Rails:
   Enabled: true
+  
+Capybara/FeatureMethods:                                                                                 
+  EnabledMethods:
+  - feature
