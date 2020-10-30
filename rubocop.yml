@@ -1,5 +1,7 @@
 # Common configuration.
-require: rubocop-rails
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   TargetRubyVersion: 2.6
@@ -24,16 +26,16 @@ AllCops:
   # opt-out. Note that when DisabledByDefault is true, cops in user
   # configuration will be enabled even if they don't set the Enabled parameter.
   DisabledByDefault: false
-  
+
   NewCops: enable
-  
+
   Exclude:
-    - 'node_modules/**/*'
-    - 'vendor/**/*'
-    
+    - "node_modules/**/*"
+    - "vendor/**/*"
+
 Metrics/BlockLength:
   Exclude:
-    - '**/spec/**/*_spec.rb'
+    - "**/spec/**/*_spec.rb"
 
 Layout/LineLength:
   Max: 120
@@ -58,7 +60,7 @@ Style/TrailingCommaInHashLiteral:
 
 Rails:
   Enabled: true
-  
-Capybara/FeatureMethods:                                                                                 
+
+Capybara/FeatureMethods:
   EnabledMethods:
-  - feature
+    - feature
