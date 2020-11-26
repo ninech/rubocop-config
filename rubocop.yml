@@ -64,3 +64,8 @@ Rails:
 Capybara/FeatureMethods:
   EnabledMethods:
     - feature
+
+# some of our tests - especially feature/system tests - just need to be longer
+RSpec/ExampleLength:
+  Exclude:                                                                           
+    - 'spec/features/**/*.rb'
