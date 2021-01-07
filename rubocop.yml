@@ -34,8 +34,7 @@ AllCops:
     - "vendor/**/*"
 
 Metrics/BlockLength:
-  Exclude:
-    - "**/spec/**/*_spec.rb"
+  IgnoredMethods: ['describe', 'context']
 
 Layout/LineLength:
   Max: 120
